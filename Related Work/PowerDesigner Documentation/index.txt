@@ -1,0 +1,42 @@
+
+
+1.Core Features Guide
+Learn about the core PowerDesigner features available in all modeling domains and how to administer and secure your environment.
+
+
+
+2.Requirements Management
+Analyze any kind of written requirements and link them with users and groups who will implement them and with design objects in other models.
+
+
+3.Enterprise Architecture
+Analyze and document your organization, its functions and processes, its applications and systems, and its physical architecture.
+
+
+
+4.Business Process Architecture
+Identify, describe, and decompose business processes into their component steps.
+
+
+5.Data Architecture
+Analyze the data objects present in a system and the relationships between them at the conceptual, logical, and physical levels.
+
+
+6.Data Movement Architecture
+Analyze and document where your data originates, where it moves to, and how it is transformed on the way, including replications and ETL.
+
+
+
+7.Object-Oriented Architecture
+Analyze a system through use cases, structural and behavioral analyses, and in terms of deployment, using the Unified Modeling Language (UML).
+
+
+
+8.XML Architecture
+Analyze and visualize an XML Schema Definition (.XSD), Document Type Definition (.DTD) or XML-Data Reduced (.XDR) file.
+
+
+
+9.Customizing and Extending PowerDesigner
+Customize the PowerDesigner public metamodel to support new types of objects and generations, and automate modeling tasks through scripts.
+

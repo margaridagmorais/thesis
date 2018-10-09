@@ -1,0 +1,102 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\begin{document}
+%
+\title{EATI: Enterprise Architecture Tool Integration}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Margarida Morais}
+
+%
+\authorrunning{Margarida Morais}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{Instituto Superior Técnico, Lisbon, Portugal,\\
+margaridamorais@tecnico.ulisboa.pt,\\
+WWW home page: http://github.com/margaridagmorais/thesis} 
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+Enterprise Architecture has taken on a major importance as a key factor for the biggest problem Enterprises face today - "change". 
+Enterprise Architecture enables the bridge between Business-Driven strategy and IT-Driven implementations and the establishment of an Enterprise environment suited to change.
+To support Enterprise Architecture, CASE tools (Computer-Aided Software Engineering) were developed to assist Enterprises to model and have a view of the state of the company, how it works and how interacts as a whole. 
+In this document we present an overview of the CASE Tools developed to support Enterprise Architecture activities (i.e. model and visualization) related to a specific practical case, the challenges of their integration for the purpose of an up-to-date Enterprise Architecture, the main context and purpose of the integration and possible solutions for the problem at hand.
+\keywords{Enterprise Architecture \and CASE Tools \and Integration \and EAMS \and PowerDesigner \and Archimate}
+\end{abstract}
+%
+%
+%
+\section{Introduction}
+Even though Enterprise Architecture as a discipline is still fairly young, the concept it self remotes to the mid of late 1980s after John Zachman published an article describing a framework for information systems architectures in the IBM Systems Journal. Zachman saw Enterprise Architecture as a set of descriptive representations that are relevant for describing an Enterprise such that it can be produced to management's requirements and maintained over the period of it's useful life~\cite{ref_1}. Nowadays Enterprise Architecture is practiced not only as a collection of artifacts by itself but is used to deliver services to improve overall organizational performance. In the midst of this frantic information era and ongoing change, and to be able to bring value and benefits from EA, Enterprises have the need to be able to update their EA in the most automatic and efficient way, needing to be updated on an as-needed basis ~\cite{ref_2}. To this end several tools have been developed with the purpose of assisting modeling, managing, and maintaining of EAs, but given the size and still immature nature of many Enterprise Architecture efforts in organizations, a number of critical challenges and problems continue to exist on how to integrate all the tools available so the automation of the updated EA can be achieved.~\cite{ref_3}. This type of integrations are intrinsic to each company because each one has a unique EA.
+
+\subsection{Objectives}
+Considering the need for an up-to-date Enterprise Architecture to achieve benefits and value creation and the challenges of tool integration opposed to this goal the main objective of this work is to integrate the Enterprise Architecture supporting tools used by the DAGI Department of the Portuguese Navy.
+The DAGI Department uses three software tools related to Enterprise Architecture: Archimate and PowerDesigner for modeling and Enterprise Architecture Management System (EAMS) for visualization. The EAMS tool allows automatic supply of EA models from external sources while maintaining continuously updated views of EA. Both PowerDesigner and EAMS use their own repositories. The EA models developed in PowerDesigner are not visible in the EAMS, which prevents the analysis of the impact of the projects in the EA model visible in the EAMS.
+
+(falar um pouco como estam a ser utilizadas agora pela DAGI as ferramentas)
+
+
+\subsection{Organization of the Document} 
+
+\section{Related Work}
+\subsection{CASE Tools}
+\subsubsection{PowerDesigner}
+\subsubsection{Archimate}
+\subsubsection{EAMS}
+\subsection{Tools Integration}
+\section{Proposed Solution}
+\section{Evaluation Methodology}
+\section{Work Schedule}
+
+\section{Conclusion}
+
+For citations of references, we prefer the use of square brackets
+and consecutive numbers. Citations using labels or the author/year
+convention are also acceptable. The following bibliography provides
+a sample reference list with entries for journal
+articles~\cite{ref_article1}, an LNCS chapter~\cite{ref_1}, a
+book~\cite{ref_book1}, proceedings without editors~\cite{ref_proc1},
+and a homepage~\cite{ref_url1}. Multiple citations are grouped
+\cite{ref_article1,ref_lncs1,ref_book1},
+\cite{ref_article1,ref_book1,ref_proc1,ref_url1}.
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+% \bibliographystyle{splncs04}
+% \bibliography{mybibliography}
+%
+\begin{thebibliography}{8}
+\bibitem{ref_1}
+J. A. Zachman: Enterprise architecture: The issue of the century. Database Programming and Design, March (1997)
+
+\bibitem{ref_2}
+Graeme Shanksa,Marianne Gloeta, Ida Asadi Somehb, Keith Framptona,Toomas Tammc,  Journal of Strategic Information Systems 27 (2018)
+
+\bibitem{ref_3}
+Dr. Stephen H. Kaisler, U.S. Senate; Dr. Frank Armour, ArmourIT, LLC, and Dr. Michael Valivullah, U.S. Capitol Police, Proceedings of the 38th Hawaii International Conference on System Sciences (2005)
+
+\bibitem{ref_url1}
+LNCS Homepage, \url{http://www.springer.com/lncs}. Last accessed 4
+Oct 2017
+\end{thebibliography}
+\end{document}

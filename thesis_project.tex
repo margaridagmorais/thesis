@@ -36,46 +36,127 @@ WWW home page: http://github.com/margaridagmorais/thesis}
 \begin{abstract}
 Enterprise Architecture has taken on a major importance as a key factor for the biggest problem Enterprises face today - "change". 
 Enterprise Architecture enables the bridge between Business-Driven strategy and IT-Driven implementations and the establishment of an Enterprise environment suited to change.
-To support Enterprise Architecture, CASE tools (Computer-Aided Software Engineering) were developed to assist Enterprises to model and have a view of the state of the company, how it works and how interacts as a whole. 
-In this document we present an overview of the CASE Tools developed to support Enterprise Architecture activities (i.e. model and visualization) related to a specific practical case, the challenges of their integration for the purpose of an up-to-date Enterprise Architecture, the main context and purpose of the integration and possible solutions for the problem at hand.
-\keywords{Enterprise Architecture \and CASE Tools \and Integration \and EAMS \and PowerDesigner \and Archimate}
+In this thesis we analyses the Enterprise Architecture efforts in the Portuguese Navy and propose Enterprise Cartography as a solution for the issues that difficult the establishment of the processes and tools that provide complete and accurate information that sustain a good EA design arising from the size and still immature nature of the Enterprise Architecture efforts in the organization.
+Enterprise Cartography erases the problem of having different architects modeling incompatible views of the organization and gives the Portuguese Navy a way to, even with an ongoing and slow EA implementation process, have a direct, consolidated and real view of the organization that provides updated information on ongoing and future transformation initiatives and creates a knowledge base which will act as the information provider to "feed" the EA model.
+To achieve this goal, we intend to explore the context of this institution, the concerns of its stakeholders, the Enterprise Architecture support mechanisms (EA tools) used to model and have a view of the state of the organization and propose the implementation of an Enterprise Cartography view in a unit of the Portuguese Navy. 
+
+\keywords{Enterprise Cartography \and EA Tools \and Integration \and Enterprise Architecture}
 \end{abstract}
 %
 %
 %
 \section{Introduction}
-Even though Enterprise Architecture as a discipline is still fairly young, the concept it self remotes to the mid of late 1980s after John Zachman published an article describing a framework for information systems architectures in the IBM Systems Journal. Zachman saw Enterprise Architecture as a set of descriptive representations that are relevant for describing an Enterprise such that it can be produced to management's requirements and maintained over the period of it's useful life~\cite{ref_1}. Nowadays Enterprise Architecture is practiced not only as a collection of artifacts by itself but is used to deliver services to improve overall organizational performance. In the midst of this frantic information era and ongoing change, and to be able to bring value and benefits from EA, Enterprises have the need to be able to update their EA in the most automatic and efficient way, needing to be updated on an as-needed basis ~\cite{ref_2}. To this end several tools have been developed with the purpose of assisting modeling, managing, and maintaining of EAs, but given the size and still immature nature of many Enterprise Architecture efforts in organizations, a number of critical challenges and problems continue to exist on how to integrate all the tools available so the automation of the updated EA can be achieved.~\cite{ref_3}. This type of integrations are intrinsic to each company because each one has a unique EA.
+Even though Enterprise Architecture as a discipline is still fairly young, the concept it self remotes to the mid of late 1980s after John Zachman published an article describing a framework for information systems architectures in the IBM Systems Journal. Zachman saw Enterprise Architecture as a set of descriptive representations that are relevant for describing an Enterprise such that it can be produced to management's requirements and maintained over the period of it's useful life~\cite{ref_1}. Nowadays Enterprise Architecture is practiced not only as a collection of artifacts by itself but is used to deliver services to improve overall organizational performance. In the midst of this frantic information era and ongoing change, and to be able to bring value and benefits from EA, Enterprises have the need to be able to update their EA  and manage it in the most automatic and efficient way~\cite{ref_2}. 
+A well defined EA is seen as an important asset for innovation and change by providing both stability and flexibility. For EA to be able to provide this value it must be well managed and maintained so its consistency can be preserved while the organization continues to evolve the architecture. To this end several tools have been developed with the purpose of assisting modeling, managing, and maintaining of EAs, but given the size and still immature nature of many Enterprise Architecture efforts in organizations, a number of critical challenges and problems continue to exist on how to manage all the EA designs from different domains and integrate it so the automation of an updated and consolidated EA view can be achieved.~\cite{ref_3}. 
+
 
 \subsection{Objectives}
-Considering the need for an up-to-date Enterprise Architecture to achieve benefits and value creation and the challenges of tool integration opposed to this goal the main objective of this work is to integrate the Enterprise Architecture supporting tools used by the DAGI Department of the Portuguese Navy.
-The DAGI Department uses three software tools related to Enterprise Architecture: Archimate and PowerDesigner for modeling and Enterprise Architecture Management System (EAMS) for visualization. The EAMS tool allows automatic supply of EA models from external sources while maintaining continuously updated views of EA. Both PowerDesigner and EAMS use their own repositories. The EA models developed in PowerDesigner are not visible in the EAMS, which prevents the analysis of the impact of the projects in the EA model visible in the EAMS.
-
-(falar um pouco como estam a ser utilizadas agora pela DAGI as ferramentas)
+As much benefits as EA can bring to the table, a study made in 2010 shows that 66 percent of the EA projects expected results are not achieved and that it's not the implementation of EA itself that is the bigger challenge but actually the several difficulties in the maintenance and managing of that same EA.~\cite{ref_4}
+The problem of keeping a set of accurate representations (i.e.  models) of an enterprise is not an easy one for large enterprises. The origin of this difficulty is that the planning process originates in many of the enterprise’s communities without a consistent, coherent and complete systemic view of the enterprise to support them, individually and as a whole as well as the struggle to align the different elements designed by different architects resulting into an unconscious design~\cite{ref_5}
+Referring to Enterprise Cartography (EC) as the process of representing an Enterprise observed directly from reality. We can differentiate it from Enterprise Architecture (EA) because it focuses on producing representations based on observations and not including the purposeful design, as one expects in EA.~\cite{ref_5}  Adopting a federated approach Enterprise Cartography demises the constraints and inflexibility that one has on the EA modeling and provides a way to have concise and coherent views of the entire organization.
+Our motivation in this thesis is to try to understand the main barriers that the Portuguese Navy faces in its EA capacity and propose the introduction of Enterprise Cartography to overcome these barriers and to support the EA process, providing EA benefits to the Portuguese Navy.
+We intend to explore the context of this institution, the concerns of its stakeholders and the constraints that are affecting the development of the EA process within the institution. Our goal is to provide the Portuguese Navy the capability to manage and maintain the long process of EA implementation through the introduction of Enterprise Cartography that acts not only as a tool to create a knowledge base to "feed" the purposeful design of EA but also is a key tool to deal with the continuous change within the organization as a provider of direct, consolidated and real views of the organization where updated information on ongoing and future transformation initiatives can be identified. The introduction of Enterprise Cartography has as main objective to achieve the benefits from the implementation of the Portuguese Navy's EA project and take advantage of the models already designed to coordinate and manage new and ongoing transformation initiatives, thus helping the Portuguese Navy to manage the most critical resources: time and money.
+To demonstrate the purpose of Enterprise Cartography, we will apply it in a unit of the Portuguese Navy.
+Since several attempts of an EA were made following different meta-models and many information is spread through different EA Tools, the main practical objective of this thesis will focus on the introduction of an EC project structured around six main phases: 1.Identification of the project goal; 2.Definition of the meta-model; 3.Identification of the best sources of information; 4.Structuring the Processes and Tools to Capture Information; 5.Definition and Configuration of the Architectural Maps; 6.Populate the Knowledge Base with an initial baseline.~\cite{ref_5}
+Propose a solution to take the first step towards an up-to-date EA capable of change in the Portuguese Navy is our main goal with this work.
 
 
 \subsection{Organization of the Document} 
+In this document we will start by analyzing Enterprise Architecture as a discipline and the existing Enterprise Architecture Frameworks such as Zackman's~\cite{ref_1} and TOGAF~\cite{ref_book1} that will support our understanding of meta-models. 
+We will address the benefits and constraints that arise from an Enterprise Architecture implementation. Such constraints often lead to the total failure of the EA project, so we will look into why such limitations arise in the development of an EA and how the introduction of  Enterprise Cartography as a supporting tool can mitigate these limitations. To this end we'll explain the concept and essence of Enterprise Cartography and how it can be implemented.
+In section 3 we will describe in depth the limitations encountered in the developing project of EA in the Portuguese Navy. Following in section 4 with the presentation of the proposed solution for the mitigation of these limitations, which have been preventing the creation of value and benefits of this EA project. As mentioned above we will introduce the implementation of EC as a solution, and for this we'll be using the 6 structured phases for the planning of an EC project proposed in  Enterprise Cartography: From Theory to Practice ~\cite{ref_5} to explain the basis of our proposed solution.
+We then propose an evaluation methodology and present a work scheduled to develop the thesis.
+
 
 \section{Related Work}
-\subsection{CASE Tools}
-\subsubsection{PowerDesigner}
-\subsubsection{Archimate}
-\subsubsection{EAMS}
-\subsection{Tools Integration}
-\section{Proposed Solution}
-\section{Evaluation Methodology}
-\section{Work Schedule}
+\subsection{EA}
+\textbf{EA discipline and benefits}\\
+The term architecture has been known for a long time in the context of building and construction and has been viewed as an integrated view of the system being designed or studied. Architecture at the level of an entire organisation has a different connotation and is referred to as 'Enterprise Architecture'. Adopting the definition from (Lankhors, Marc. 2019)~\cite{ref_book2} EA can be viewed as a coherent whole of principles, methods, and models that are used in the design and realisation of an enterprise’s organisational structure, business processes, information systems, and infrastructure.
+The purpose of EA is to optimize across the enterprise the often fragmented legacy of processes (both manual and automated) into an integrated environment that is responsive to change and supportive of the delivery of the business strategy.~\cite{ref_book1}
+From EA models, we can make EA artifacts to represent viewpoints that address concerns of specific groups of organization’s stakeholders.
+The benefits of EA stem from having the holistic view of the organisation. This overview can help you identify and rectify existing problems, reduce duplication and inefficiency and plan for the future by being able to effectively model the impact of change. Having this holistic view is itself a benefit but most of the benefit derives from the things you can do with it, for example:
+\begin{itemize}
+\item Provides a means for rapid communication and change propagation~\cite{ref_7}
+\item Turns a complex environment into a manageable one~\cite{ref_8}
+\item Enables Business and IT alignment~\cite{ref_9}
+\item Provides a mens to manage integration of old and new systems~\cite{ref_10}
+\item Maintains the link between the IS design world and the operational world~\cite{ref_11}
+\item Allows for flexibility and responsiveness to change~\cite{ref_12}
+\item Provides a means for business resource optimization~\cite{ref_13}
+\end{itemize}
+To support the Enterprise Architecture structure several frameworks were developed to be used for the developing of a  broad range of different architectures. They describe a method for designing a target state of the enterprise in terms of a set of building blocks, and show how the building blocks fit together. Some of them also contain a set of tools and provide a common vocabulary and recommend a list of standards and compliant products that can be used to implement the building blocks.~\cite{{ref_book1}}\\
+\\
+\textbf{Zachman Framework}
+\\*
+John Zachman, the "father" of Enterprise Architecture, created the first framework in 1987. Today the Zachman framework is a 6x6 matrix that relates the perspectives of the various actors (planner, owner, designer, builder, subcontractor – each one addressing concerns of a specific group of stakeholders) along lines, with a set of 6 elementary questions in the columns (what, why, who, where, when, how), the dimensions, which refer to the different aspects about the organization that need to be known.
+In each cell the various components and their artifacts are described using various formats and notations.
+Although this approach is very general, what allows to represent any complex object, is extremely exhaustive, reason why it is possible to characterize in detail the EA of an organization. This framework suggests what artifacts an EA should produce.\\
+\\
+\textbf{TOGAF}
+\\*
+The Open Group Architecture Framework (TOGAF) is a conceptual model of enterprise architecture conceived in 1995 by The Open Group Architecture Forum, whose goal is to provide a global approach to the design, planning, implementation and governance of architectures, thus establishing a common language of communication among architects.\\
+TOGAF is based on an iterative, reusable, cyclical process and supported by the best modeling practices involved in the activities of an organization, comprising four types of architecture that are commonly accepted as subsets of an enterprise architecture, namely: business, data, applications, and technology.\\
+The content of TOGAF is structured in five parts:~\cite{ref_book1}
+\begin{enumerate}
+\item Architecture Development Methodology (ADM) – Defines the process of creating an architecture. Is a full life-cycle process for planning, designing, realizing and governing EA. This cycle has a preliminary part and eight core parts arranged in a sequential cycle order: A - Architecture Vision;  B – Business Architecture; C – Information System Architectures; D – Technology Architecture; E – Opportunities and Solutions; F – Migration Planning; G – Implementation Governance; H – Architecture Change Management. 
+\item Architecture Content Framework – Defines the work product of an AE. Gives a structured meta-model for architectural artifacts and an overview of architectural deliverables. 
+\item Architecture Capability Framework – Defines the processes, the skills, the roles and the responsibilities that an organization need to have to construct and develop an EA.
+\item Enterprise Continuum and Tools – Defines taxonomies and tools to categorize and store the outputs of an EA.
+\item Reference Models – Technical Reference Model (TRM) and the Integrated Information Infrastructure Reference Model (III-RM).
 
-\section{Conclusion}
+\end{enumerate}
+
+
+\textbf{EA constraints}
+\\*
+Despite the potential for value creation offered by EA, many organisations view EA as an organisational “black hole” into which money is poured but where the value proposition is often ambiguous~\cite{ref_6}
+In the realm of Enterprise Architecture, there are probably more examples of failures than there are successes. These are some of the pitfalls where, too often, EA programs fail to meet their intended purpose:
+\begin{enumerate}
+\item Realising who the true architects are
+\\
+Enterprise Architecture has not progressed to the point where people can readily consume the material and actually find it valuable. On many EA programs the brilliant architects present their sophisticated frameworks to key members of the leadership and the organization, most of whom have no clue what the architects are talking about, so their complex reference architectures will be ignored. \\
+There must be EA awareness on all levels of the organization.
+It is not the Architecture Team who are the true architects - it is those stakeholders who work within the business and solutions that the architecting team are capturing who are the true architects. The architecting team are simply facilitators of architecture.~\cite{ref_14}\\
+
+\item The tools
+\\
+Many architecture initiatives fail because of a reliance on such frameworks (Zachman’s, TOGAF). They either get cancelled or fail to deliver the expected business benefits, with teams becoming too wrapped up in the detail of capturing, populating, or forcing a frameworks’ approaches. And for the average person to try to understand what these documents actually mean and say and how they relate is nearly impossible.\\
+\item Understanding the purpose of the architecture - change
+\\
+A common mistake is to place too much emphasis on the "as is" architecture. In the reality of today the world is changing faster and faster and the value of EA is not on representing the today state of the enterprise but to model enough of the "as is" in order to understand the "to be".\\
+\item Cooperation between domains to achieve a conscious design
+\\
+The design of the enterprise's architecture is a distributed process in most enterprises, performed by architects from different domains (from business to technology), each planning, designing and deciding based on partial and often conflicting or even incompatible views of the enterprise. EA projects fail to create a single, consolidated view of the enterprise because this requires coordination between different areas, from coherent and non-conflicting goals, rational and implementable use of resources, cost sharing, work methods, languages, tools, etc ~\cite{ref_5}
+\end{enumerate}
+
+
+\subsection{EC}
+
+introducing EC 
+
+
+Como resolve algumas das limitações da EA
+
+
+\section{Research Problem} 
+
+\section{Proposed Solution}
+maintenance - o metodo mantem o EA na medida em que a ira manter sempre actualizada
+management - o metodo ira gerir o EA na medida que irá controlar como a integração das várias tentativas ira suceder e quem estara envolvido (EA Roles)
+\section{Evaluation Methodology}
+
+
+\section{Conclusions}
 
 For citations of references, we prefer the use of square brackets
 and consecutive numbers. Citations using labels or the author/year
 convention are also acceptable. The following bibliography provides
 a sample reference list with entries for journal
-articles~\cite{ref_article1}, an LNCS chapter~\cite{ref_1}, a
-book~\cite{ref_book1}, proceedings without editors~\cite{ref_proc1},
+articles~\cite{ref_1}, an LNCS chapter~\cite{ref_1}, a
+book~\cite{ref_book1}, proceedings without editors~\cite{ref_1},
 and a homepage~\cite{ref_url1}. Multiple citations are grouped
-\cite{ref_article1,ref_lncs1,ref_book1},
-\cite{ref_article1,ref_book1,ref_proc1,ref_url1}.
+\cite{ref_1,ref_1,ref_1},
+\cite{ref_1,ref_1,ref_1,ref_1}.
 %
 % ---- Bibliography ----
 %
@@ -95,8 +176,47 @@ Graeme Shanksa,Marianne Gloeta, Ida Asadi Somehb, Keith Framptona,Toomas Tammc, 
 \bibitem{ref_3}
 Dr. Stephen H. Kaisler, U.S. Senate; Dr. Frank Armour, ArmourIT, LLC, and Dr. Michael Valivullah, U.S. Capitol Police, Proceedings of the 38th Hawaii International Conference on System Sciences (2005)
 
+\bibitem{ref_4}
+Sven Roeleven, Why Two Thrids of Enterprise Architecture Projects Fail An explanation for the limited sucess of architecture projects, Business White Paper December (2010)
+
+\bibitem{ref_5}
+Pedro Sousa, José Tribolet and Sérgio Guerreiro, Enterprise Cartography: From Theory to Practice
+\bibitem{ref_6}
+de Vries, M., and van Rensburg, A.C. J. (2008). Enterprise Architecture - New business value perspectives. South African Journal of Industrial Engineering
+
+\bibitem{ref_7}
+Carter, 1999, James, 2003a, Perdeck et al., 2004, Wybolt, 1999
+
+\bibitem{ref_8}
+Perdeck et al.,2004 van der Raadt et al. 2004
+
+\bibitem{ref_9}
+Perdeck et al., 2004
+
+\bibitem{ref_10}
+James, 2003a, Perdeck et al., 2004, Schekkerman, 2010a, Hasselbring et al., 2004
+
+\bibitem{ref_11}
+Zachman, 1997, Beznosov, 1998, Carter, 1999, Roberts, 2002
+
+\bibitem{ref_12}
+Aerts et al.,2004, Agrawal et al.,2003, Narvenkar, 2002
+
+\bibitem{ref_13}
+Alt and Pushmann, 2005, Roberts, 2002
+
+\bibitem{ref_14}
+Robbie Forder, Five Reasons for Architecture Failure ,BMT Hi-Q Sigma, July (2010)
+
+\bibitem{ref_book1}
+The Open Group. TOGAF Version 9.1 (2011)
+
+\bibitem{ref_book2}
+LANKHORST, MARC. ENTERPRISE ARCHITECTURE AT WORK: Modelling, Communication and Analysis. SPRINGER, 2019.
+
 \bibitem{ref_url1}
 LNCS Homepage, \url{http://www.springer.com/lncs}. Last accessed 4
 Oct 2017
 \end{thebibliography}
 \end{document}
+
